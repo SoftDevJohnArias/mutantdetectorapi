@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MutantDetector.Api</name>
+    </assembly>
+    <members>
+        <member name="M:MutantDetector.Api.Controllers.mutantController.GetDna(MutantDetector.Core.Services.DNA)">
+             <summary>
+             Valida informacion de cadena mutante
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/mutant
+                 {
+                  "dna": ["ATACAA","CAGTGC","TTATGG","AGAAAG","CCCTAA","TCACTG"]
+                 }
+            
+             </remarks>
+             <response code="200">Felicitaciones eres un mutante tienes una secuencia de cuatro letras iguales en tu base ADN </response>
+             <response code="403">lo siento eres un simple mortal XD </response> 
+             <response code="400">ups debes revisar tu base Nitrogenada  debera ser (A,T.C,G) o quien eres? :@ </response> 
+        </member>
+    </members>
+</doc>
